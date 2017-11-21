@@ -65,6 +65,21 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(24);
+} else {
+  module.exports = __webpack_require__(25);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -254,7 +269,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -294,21 +309,6 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(24);
-} else {
-  module.exports = __webpack_require__(25);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 3 */
@@ -368,7 +368,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 4 */
@@ -489,7 +489,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 6 */
@@ -506,7 +506,7 @@ module.exports = emptyObject;
 
 
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -558,7 +558,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 7 */
@@ -593,7 +593,7 @@ if (process.env.NODE_ENV !== 'production') {
   module.exports = __webpack_require__(37)();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 8 */
@@ -660,7 +660,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 9 */
@@ -764,7 +764,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(29);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 12 */
@@ -782,7 +782,7 @@ if (process.env.NODE_ENV === 'production') {
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -845,7 +845,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 13 */
@@ -1212,7 +1212,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _exenv = __webpack_require__(46);
+var _exenv = __webpack_require__(47);
 
 var _exenv2 = _interopRequireDefault(_exenv);
 
@@ -1353,7 +1353,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(49);
+var	fixUrls = __webpack_require__(55);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1672,7 +1672,7 @@ function updateLink (link, options, obj) {
 "use strict";
 
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1684,9 +1684,9 @@ var _RecipeBox = __webpack_require__(38);
 
 var _RecipeBox2 = _interopRequireDefault(_RecipeBox);
 
-__webpack_require__(47);
+__webpack_require__(53);
 
-__webpack_require__(50);
+__webpack_require__(56);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1706,7 +1706,7 @@ _reactDom2.default.render(_react2.default.createElement(_RecipeBox2.default, nul
  This source code is licensed under the MIT license found in the
  LICENSE file in the root directory of this source tree.
 */
-var f=__webpack_require__(4),p=__webpack_require__(5);__webpack_require__(3);var r=__webpack_require__(1);
+var f=__webpack_require__(4),p=__webpack_require__(5);__webpack_require__(3);var r=__webpack_require__(2);
 function t(a){for(var b=arguments.length-1,d="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,e=0;e<b;e++)d+="\x26args[]\x3d"+encodeURIComponent(arguments[e+1]);b=Error(d+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var u={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function v(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}v.prototype.isReactComponent={};v.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?t("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};v.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function w(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}function x(){}x.prototype=v.prototype;var y=w.prototype=new x;y.constructor=w;f(y,v.prototype);y.isPureReactComponent=!0;function z(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}var A=z.prototype=new x;A.constructor=z;f(A,v.prototype);A.unstable_isAsyncReactComponent=!0;A.render=function(){return this.props.children};
@@ -1747,7 +1747,7 @@ var objectAssign$1 = __webpack_require__(4);
 var require$$0 = __webpack_require__(6);
 var emptyObject = __webpack_require__(5);
 var invariant = __webpack_require__(3);
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 var checkPropTypes = __webpack_require__(8);
 
 /**
@@ -3426,7 +3426,7 @@ module.exports = ReactEntry;
 })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 26 */
@@ -3443,7 +3443,7 @@ module.exports = ReactEntry;
  LICENSE file in the root directory of this source tree.
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(2);__webpack_require__(3);var l=__webpack_require__(10),n=__webpack_require__(4),ba=__webpack_require__(12),ca=__webpack_require__(1),da=__webpack_require__(5),ea=__webpack_require__(13),fa=__webpack_require__(14),ha=__webpack_require__(15),ia=__webpack_require__(16);
+var aa=__webpack_require__(0);__webpack_require__(3);var l=__webpack_require__(10),n=__webpack_require__(4),ba=__webpack_require__(12),ca=__webpack_require__(2),da=__webpack_require__(5),ea=__webpack_require__(13),fa=__webpack_require__(14),ha=__webpack_require__(15),ia=__webpack_require__(16);
 function w(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:w("227");
 function ja(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}
 var ka={Namespaces:{html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},getIntrinsicNamespace:ja,getChildNamespace:function(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ja(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}},la=null,oa={};
@@ -3768,14 +3768,14 @@ if (process.env.NODE_ENV !== "production") {
 
 'use strict';
 
-var react = __webpack_require__(2);
+var react = __webpack_require__(0);
 var invariant = __webpack_require__(3);
 var ExecutionEnvironment = __webpack_require__(10);
 var _assign = __webpack_require__(4);
 var EventListener = __webpack_require__(12);
 var require$$0 = __webpack_require__(6);
 var hyphenateStyleName = __webpack_require__(30);
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 var camelizeStyleName = __webpack_require__(32);
 var performanceNow = __webpack_require__(34);
 var propTypes = __webpack_require__(7);
@@ -20974,7 +20974,7 @@ module.exports = ReactDOMFiberEntry;
 })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 30 */
@@ -21209,7 +21209,7 @@ module.exports = performance || {};
 
 
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(6);
 var assign = __webpack_require__(4);
@@ -21743,7 +21743,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 37 */
@@ -21759,7 +21759,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 var invariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(9);
 
@@ -21823,17 +21823,25 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactCollapsible = __webpack_require__(39);
+var _AddRecipe = __webpack_require__(39);
 
-var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+var _AddRecipe2 = _interopRequireDefault(_AddRecipe);
 
-var _reactModal = __webpack_require__(40);
+var _EditModal = __webpack_require__(40);
 
-var _reactModal2 = _interopRequireDefault(_reactModal);
+var _EditModal2 = _interopRequireDefault(_EditModal);
+
+var _Header = __webpack_require__(48);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Recipes = __webpack_require__(49);
+
+var _Recipes2 = _interopRequireDefault(_Recipes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21858,62 +21866,131 @@ var RecipeBox = function (_React$Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = RecipeBox.__proto__ || Object.getPrototypeOf(RecipeBox)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            recipies: [{
-                name: "Pumpkin Pie",
-                ingredients: ['Pumpkin Puree', 'Sweetened Condensed Milk', 'Eggs', 'Pumpkin Pie Spice', 'Pie Crust']
-            }, {
-                name: 'Onion Pie',
-                ingredients: ['Onion', 'Pie Crust', 'Sounds Yummy right?']
-            }],
-            recipeModal: undefined,
-            recipeIngredients: undefined
-        }, _this.handleEditOption = function (recipeToEdit, recipeIngredients, index) {
-            console.log(recipeIngredients);
-            console.log(index);
-            console.log(_this.state.recipies[index].name);
+            // recipies: [{
+            //     name: "Pumpkin Pie 2",
+            //     ingredients: ['Pumpkin Puree','Sweetened Condensed Milk','Eggs','Pumpkin Pie Spice','Pie Crust']
+            // },{
+            //     name: 'Onion Pie',
+            //     ingredients: ['Onion','Pie Crust','Sounds Yummy right?']
+            // }],
+            recipies: [],
+            editModal: undefined,
+            addModal: undefined,
+            recipeIngredients: undefined,
+            recipeIndex: undefined,
+            collapse: false
+        }, _this.handleEditRecipe = function (recipeToEdit, recipeIngredients, recipeIndex) {
             _this.setState(function () {
-                return { recipeModal: recipeToEdit, recipeIngredients: recipeIngredients };
-            });
-        }, _this.handleDeleteOption = function (optionToRemove) {
-            _this.setState(function (prevState) {
-                return {
-                    options: prevState.options.filter(function (option) {
-                        return optionToRemove !== option;
-                    })
+                return { editModal: recipeToEdit,
+                    recipeIngredients: recipeIngredients,
+                    recipeIndex: recipeIndex,
+                    edit: true
                 };
             });
-        }, _this.handleRemoveOption = function (recipeToRemove) {
-            console.log('handleRemove: ' + recipeToRemove);
+        }, _this.handleSaveEdit = function (recipe, recipeIngredients) {
+            if (!recipe) {
+                return 'Enter valid value to add item';
+            } else if (_this.state.recipies.find(function (o) {
+                return o.name === recipe;
+            }) && !_this.state.edit) {
+                return 'This option already exists';
+            }
+            var index = _this.state.recipeIndex;
+            if (_this.state.edit) {
+                _this.setState(function (prevState) {
+                    var newRecipies = prevState.recipies;
+                    newRecipies[index].name = recipe;
+                    newRecipies[index].ingredients = recipeIngredients;
+                    return {
+                        recipies: newRecipies,
+                        editModal: undefined,
+                        recipeIngredients: undefined,
+                        recipeIndex: undefined,
+                        edit: false
+                    };
+                });
+            } else {
+                _this.setState(function (prevState) {
+                    return {
+                        recipies: prevState.recipies.concat([{ name: recipe, ingredients: recipeIngredients }]),
+                        editModal: undefined,
+                        recipeIngredients: undefined,
+                        recipeIndex: undefined
+                    };
+                });
+            }
+        }, _this.handleRemoveRecipe = function (recipeToRemoveIndex) {
+            _this.setState(function (prevState) {
+                var rese = prevState.recipies;
+                rese.splice(recipeToRemoveIndex, 1);
+                return {
+                    collapse: false,
+                    recipies: rese
+                    //recipies: prevState.recipies.splice(recipeToRemoveIndex,1)
+                };
+            });
         }, _this.handleAddRecipe = function () {
             _this.setState(function () {
-                return { recipeModal: true };
+                return { editModal: true,
+                    edit: false };
             });
         }, _this.handleCloseModal = function () {
             _this.setState(function () {
-                return { recipeModal: undefined, recipeIngredients: undefined };
+                return { editModal: undefined, recipeIngredients: undefined };
             });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(RecipeBox, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            try {
+                var json = localStorage.getItem('recipies');
+                var recipies = JSON.parse(json);
+
+                if (recipies) {
+                    this.setState(function () {
+                        return { recipies: recipies };
+                    });
+                }
+            } catch (e) {
+                // Do nothig at all
+            }
+        }
+    }, {
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate(prevProps, prevState) {
+            if (prevState.recipies.length !== this.state.recipies.length || prevState.edit !== this.state.edit) {
+                var json = JSON.stringify(this.state.recipies);
+                localStorage.setItem('recipies', json);
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(Header, null),
-                _react2.default.createElement(Recipies, {
-                    recipies: this.state.recipies,
-                    handleEditOption: this.handleEditOption,
-                    handleRemoveOption: this.handleRemoveOption
-                }),
-                _react2.default.createElement(AddRecipe, {
-                    handleAddRecipe: this.handleAddRecipe
-                }),
-                _react2.default.createElement(OptionModal, {
-                    selectedOption: this.state.recipeModal,
+                _react2.default.createElement(_Header2.default, null),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(_Recipes2.default, {
+                        recipies: this.state.recipies,
+                        collapse: this.state.collapse,
+                        handleEditRecipe: this.handleEditRecipe,
+                        handleRemoveRecipe: this.handleRemoveRecipe
+                    }),
+                    _react2.default.createElement(_AddRecipe2.default, {
+                        handleAddRecipe: this.handleAddRecipe
+                    })
+                ),
+                _react2.default.createElement(_EditModal2.default, {
+                    selectedOption: this.state.editModal,
                     recipeIngredients: this.state.recipeIngredients,
-                    handleCloseModal: this.handleCloseModal
+                    edit: this.state.edit,
+                    handleCloseModal: this.handleCloseModal,
+                    handleSaveEdit: this.handleSaveEdit
                 })
             );
         }
@@ -21924,152 +22001,6 @@ var RecipeBox = function (_React$Component) {
 
 exports.default = RecipeBox;
 
-
-var Header = function Header() {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'h1',
-            null,
-            'Recipe Box Application'
-        ),
-        _react2.default.createElement(
-            'h2',
-            null,
-            'Collect and store your recipes online'
-        )
-    );
-};
-
-var AddRecipe = function AddRecipe(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'button',
-            {
-                onClick: function onClick(e) {
-                    props.handleAddRecipe();
-                } },
-            'Add New Recipe'
-        )
-    );
-};
-
-var Actions = function Actions(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'button',
-            {
-                onClick: function onClick(e) {
-                    props.handleEditOption(props.recipeName, props.recipeIngredients, props.index);
-                } },
-            'Edit'
-        ),
-        _react2.default.createElement(
-            'button',
-            {
-                onClick: function onClick(e) {
-                    props.handleRemoveOption(props.recipeName);
-                } },
-            'Remove'
-        )
-    );
-};
-
-var Recipies = function Recipies(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        props.recipies.map(function (item, index) {
-            return _react2.default.createElement(Recipe, {
-                key: index,
-                recipeName: item.name,
-                ingredients: item.ingredients,
-                index: index,
-                handleEditOption: props.handleEditOption,
-                handleRemoveOption: props.handleRemoveOption
-            });
-        })
-    );
-};
-
-var Recipe = function Recipe(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            _reactCollapsible2.default,
-            { trigger: props.recipeName },
-            _react2.default.createElement(
-                'h2',
-                null,
-                'Ingredients'
-            ),
-            props.ingredients.map(function (ingredient, index) {
-                return _react2.default.createElement(
-                    'p',
-                    { key: index },
-                    ingredient
-                );
-            }),
-            _react2.default.createElement(Actions, {
-                handleEditOption: props.handleEditOption,
-                handleRemoveOption: props.handleRemoveOption,
-                recipeName: props.recipeName,
-                index: props.index,
-                recipeIngredients: props.ingredients
-            })
-        )
-    );
-};
-
-var OptionModal = function OptionModal(props) {
-    return _react2.default.createElement(
-        _reactModal2.default,
-        {
-            isOpen: !!props.selectedOption,
-            onRequestClose: props.handleCloseModal,
-            contentLabel: 'Selected Option',
-            closeTimeoutMS: 200,
-            className: 'modal'
-        },
-        props.selectedOption === true ? _react2.default.createElement(
-            'h3',
-            { className: 'modal__title' },
-            'Add Recipe'
-        ) : _react2.default.createElement(
-            'h3',
-            { className: 'modal__title' },
-            'Edit Recipe'
-        ),
-        _react2.default.createElement(
-            'div',
-            null,
-            props.selectedOption && _react2.default.createElement(
-                'p',
-                { className: 'modal__body' },
-                props.selectedOption
-            ),
-            props.recipeIngredients && _react2.default.createElement(
-                'p',
-                { className: 'modal__body' },
-                props.recipeIngredients.toString()
-            ),
-            _react2.default.createElement(
-                'button',
-                {
-                    className: 'button',
-                    onClick: props.handleCloseModal },
-                'OK'
-            )
-        )
-    );
-};
-
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -22078,282 +22009,31 @@ var OptionModal = function OptionModal(props) {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(7);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Collapsible = function (_Component) {
-  _inherits(Collapsible, _Component);
-
-  function Collapsible(props) {
-    _classCallCheck(this, Collapsible);
-
-    // Bind class methods
-    var _this = _possibleConstructorReturn(this, (Collapsible.__proto__ || Object.getPrototypeOf(Collapsible)).call(this, props));
-
-    _this.handleTriggerClick = _this.handleTriggerClick.bind(_this);
-    _this.handleTransitionEnd = _this.handleTransitionEnd.bind(_this);
-    _this.continueOpenCollapsible = _this.continueOpenCollapsible.bind(_this);
-
-    // Defaults the dropdown to be closed
-    if (props.open) {
-      _this.state = {
-        isClosed: false,
-        shouldSwitchAutoOnNextCycle: false,
-        height: 'auto',
-        transition: 'none',
-        hasBeenOpened: true,
-        overflow: props.overflowWhenOpen,
-        inTransition: false
-      };
-    } else {
-      _this.state = {
-        isClosed: true,
-        shouldSwitchAutoOnNextCycle: false,
-        height: 0,
-        transition: 'height ' + props.transitionTime + 'ms ' + props.easing,
-        hasBeenOpened: false,
-        overflow: 'hidden',
-        inTransition: false
-      };
-    }
-    return _this;
-  }
-
-  _createClass(Collapsible, [{
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate(prevProps, prevState) {
-      var _this2 = this;
-
-      if (this.state.shouldOpenOnNextCycle) {
-        this.continueOpenCollapsible();
-      }
-
-      if (prevState.height === 'auto' && this.state.shouldSwitchAutoOnNextCycle === true) {
-        window.setTimeout(function () {
-          // Set small timeout to ensure a true re-render
-          _this2.setState({
-            height: 0,
-            overflow: 'hidden',
-            isClosed: true,
-            shouldSwitchAutoOnNextCycle: false
-          });
-        }, 50);
-      }
-
-      // If there has been a change in the open prop (controlled by accordion)
-      if (prevProps.open !== this.props.open) {
-        if (this.props.open === true) {
-          this.openCollapsible();
-        } else {
-          this.closeCollapsible();
-        }
-      }
-    }
-  }, {
-    key: 'closeCollapsible',
-    value: function closeCollapsible() {
-      this.setState({
-        shouldSwitchAutoOnNextCycle: true,
-        height: this.refs.inner.offsetHeight,
-        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
-        inTransition: true
-      });
-    }
-  }, {
-    key: 'openCollapsible',
-    value: function openCollapsible() {
-      this.setState({
-        inTransition: true,
-        shouldOpenOnNextCycle: true
-      });
-    }
-  }, {
-    key: 'continueOpenCollapsible',
-    value: function continueOpenCollapsible() {
-      this.setState({
-        height: this.refs.inner.offsetHeight,
-        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
-        isClosed: false,
-        hasBeenOpened: true,
-        inTransition: true,
-        shouldOpenOnNextCycle: false
-      });
-    }
-  }, {
-    key: 'handleTriggerClick',
-    value: function handleTriggerClick(event) {
-      event.preventDefault();
-
-      if (this.props.triggerDisabled) {
-        return;
-      }
-
-      if (this.props.handleTriggerClick) {
-        this.props.handleTriggerClick(this.props.accordionPosition);
-      } else {
-        if (this.state.isClosed === true) {
-          this.openCollapsible();
-          this.props.onOpening();
-        } else {
-          this.closeCollapsible();
-          this.props.onClosing();
-        }
-      }
-    }
-  }, {
-    key: 'renderNonClickableTriggerElement',
-    value: function renderNonClickableTriggerElement() {
-      if (this.props.triggerSibling && typeof this.props.triggerSibling === 'string') {
-        return _react2.default.createElement(
-          'span',
-          { className: this.props.classParentString + '__trigger-sibling' },
-          this.props.triggerSibling
-        );
-      } else if (this.props.triggerSibling) {
-        return _react2.default.createElement(this.props.triggerSibling, null);
-      }
-
-      return null;
-    }
-  }, {
-    key: 'handleTransitionEnd',
-    value: function handleTransitionEnd() {
-      // Switch to height auto to make the container responsive
-      if (!this.state.isClosed) {
-        this.setState({ height: 'auto', overflow: this.props.overflowWhenOpen, inTransition: false });
-        this.props.onOpen();
-      } else {
-        this.setState({ inTransition: false });
-        this.props.onClose();
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var dropdownStyle = {
-        height: this.state.height,
-        WebkitTransition: this.state.transition,
-        msTransition: this.state.transition,
-        transition: this.state.transition,
-        overflow: this.state.overflow
-      };
-
-      var openClass = this.state.isClosed ? 'is-closed' : 'is-open';
-      var disabledClass = this.props.triggerDisabled ? 'is-disabled' : '';
-
-      //If user wants different text when tray is open
-      var trigger = this.state.isClosed === false && this.props.triggerWhenOpen !== undefined ? this.props.triggerWhenOpen : this.props.trigger;
-
-      // Don't render children until the first opening of the Collapsible if lazy rendering is enabled
-      var children = this.props.lazyRender && !this.state.hasBeenOpened && this.state.isClosed && !this.state.inTransition ? null : this.props.children;
-
-      // Construct CSS classes strings
-      var triggerClassString = this.props.classParentString + '__trigger ' + openClass + ' ' + disabledClass + ' ' + (this.state.isClosed ? this.props.triggerClassName : this.props.triggerOpenedClassName);
-      var parentClassString = this.props.classParentString + ' ' + (this.state.isClosed ? this.props.className : this.props.openedClassName);
-      var outerClassString = this.props.classParentString + '__contentOuter ' + this.props.contentOuterClassName;
-      var innerClassString = this.props.classParentString + '__contentInner ' + this.props.contentInnerClassName;
-
-      return _react2.default.createElement(
-        'div',
-        { className: parentClassString.trim() },
+var AddRecipe = function AddRecipe(props) {
+    return _react2.default.createElement(
+        "div",
+        null,
         _react2.default.createElement(
-          'span',
-          {
-            className: triggerClassString.trim(),
-            onClick: this.handleTriggerClick },
-          trigger
-        ),
-        this.renderNonClickableTriggerElement(),
-        _react2.default.createElement(
-          'div',
-          {
-            className: outerClassString.trim(),
-            ref: 'outer',
-            style: dropdownStyle,
-            onTransitionEnd: this.handleTransitionEnd
-          },
-          _react2.default.createElement(
-            'div',
-            {
-              className: innerClassString.trim(),
-              ref: 'inner'
-            },
-            children
-          )
+            "button",
+            { className: "button",
+                onClick: function onClick(e) {
+                    props.handleAddRecipe();
+                } },
+            "Add New Recipe"
         )
-      );
-    }
-  }]);
-
-  return Collapsible;
-}(_react.Component);
-
-Collapsible.propTypes = {
-  transitionTime: _propTypes2.default.number,
-  easing: _propTypes2.default.string,
-  open: _propTypes2.default.bool,
-  classParentString: _propTypes2.default.string,
-  openedClassName: _propTypes2.default.string,
-  triggerClassName: _propTypes2.default.string,
-  triggerOpenedClassName: _propTypes2.default.string,
-  contentOuterClassName: _propTypes2.default.string,
-  contentInnerClassName: _propTypes2.default.string,
-  accordionPosition: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
-  handleTriggerClick: _propTypes2.default.func,
-  onOpen: _propTypes2.default.func,
-  onClose: _propTypes2.default.func,
-  onOpening: _propTypes2.default.func,
-  onClosing: _propTypes2.default.func,
-  trigger: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
-  triggerWhenOpen: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
-  triggerDisabled: _propTypes2.default.bool,
-  lazyRender: _propTypes2.default.bool,
-  overflowWhenOpen: _propTypes2.default.oneOf(['hidden', 'visible', 'auto', 'scroll', 'inherit', 'initial', 'unset']),
-  triggerSibling: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.func])
+    );
 };
 
-Collapsible.defaultProps = {
-  transitionTime: 400,
-  easing: 'linear',
-  open: false,
-  classParentString: 'Collapsible',
-  triggerDisabled: false,
-  lazyRender: false,
-  overflowWhenOpen: 'hidden',
-  openedClassName: '',
-  triggerClassName: '',
-  triggerOpenedClassName: '',
-  contentOuterClassName: '',
-  contentInnerClassName: '',
-  className: '',
-  triggerSibling: null,
-  onOpen: function onOpen() {},
-  onClose: function onClose() {},
-  onOpening: function onOpening() {},
-  onClosing: function onClosing() {}
-};
-
-exports.default = Collapsible;
-
-
+exports.default = AddRecipe;
 
 /***/ }),
 /* 40 */
@@ -22363,10 +22043,151 @@ exports.default = Collapsible;
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactModal = __webpack_require__(41);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EditModal = function (_React$Component) {
+    _inherits(EditModal, _React$Component);
+
+    function EditModal() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, EditModal);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = EditModal.__proto__ || Object.getPrototypeOf(EditModal)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            error: undefined
+        }, _this.handleSaveEdit = function (e) {
+            e.preventDefault();
+            var recipe = e.target.elements.RecipeName.value.trim();
+            var ingredients = e.target.elements.ingredientsText.value.split(",");
+            var error = _this.props.handleSaveEdit(recipe, ingredients);
+            console.log(error);
+            _this.setState(function () {
+                return { error: error };
+            });
+        }, _this.handleCloseModal = function () {
+            _this.setState(function () {
+                return { error: undefined };
+            });
+            _this.props.handleCloseModal();
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(EditModal, [{
+        key: 'render',
+        value: function render() {
+            var ingredientsString = "";
+            var recipe = "";
+            if (this.props.recipeIngredients) {
+                ingredientsString = this.props.recipeIngredients.toString();
+            }
+            if (this.props.selectedOption && this.props.edit) {
+                recipe = this.props.selectedOption;
+            }
+            return _react2.default.createElement(
+                _reactModal2.default,
+                {
+                    isOpen: !!this.props.selectedOption,
+                    onRequestClose: this.props.handleCloseModal,
+                    contentLabel: 'Selected Option',
+                    closeTimeoutMS: 200,
+                    className: 'modal'
+                },
+                this.props.edit ? _react2.default.createElement(
+                    'h2',
+                    { className: 'modal__title' },
+                    'Edit Recipe'
+                ) : _react2.default.createElement(
+                    'h2',
+                    { className: 'modal__title' },
+                    'Add Recipe'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'modal__body' },
+                    _react2.default.createElement(
+                        'form',
+                        { className: 'modal__form', id: 'recipeForm', onSubmit: this.handleSaveEdit },
+                        _react2.default.createElement(
+                            'h3',
+                            { className: 'modal__subtitle' },
+                            'Recipe'
+                        ),
+                        _react2.default.createElement('input', { className: 'modal__input', type: 'text', name: 'RecipeName', defaultValue: recipe, placeholder: 'Enter recipe name' }),
+                        _react2.default.createElement(
+                            'h3',
+                            { className: 'modal__subtitle' },
+                            'Ingredients'
+                        ),
+                        _react2.default.createElement('textarea', { className: 'modal__textarea', placeholder: 'Enter Ingredients, separated by comma', name: 'ingredientsText', defaultValue: ingredientsString }),
+                        this.state.error && _react2.default.createElement(
+                            'p',
+                            { className: 'add-option-error' },
+                            this.state.error
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'modal__button-area' },
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'button modal__save-button', type: 'submit', form: 'recipeForm' },
+                            'Save'
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            {
+                                className: 'button modal__close-button',
+                                onClick: this.handleCloseModal },
+                            'Close'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return EditModal;
+}(_react2.default.Component);
+
+exports.default = EditModal;
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Modal = __webpack_require__(41);
+var _Modal = __webpack_require__(42);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -22375,7 +22196,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Modal2.default;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22390,7 +22211,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22402,7 +22223,7 @@ var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _ModalPortal = __webpack_require__(42);
+var _ModalPortal = __webpack_require__(43);
 
 var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
 
@@ -22597,10 +22418,10 @@ Modal.defaultStyles = {
   }
 };
 exports.default = Modal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22616,17 +22437,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
 var _propTypes = __webpack_require__(7);
 
-var _focusManager = __webpack_require__(43);
+var _focusManager = __webpack_require__(44);
 
 var focusManager = _interopRequireWildcard(_focusManager);
 
-var _scopeTab = __webpack_require__(44);
+var _scopeTab = __webpack_require__(45);
 
 var _scopeTab2 = _interopRequireDefault(_scopeTab);
 
@@ -22638,7 +22459,7 @@ var _refCount = __webpack_require__(19);
 
 var refCount = _interopRequireWildcard(_refCount);
 
-var _bodyClassList = __webpack_require__(45);
+var _bodyClassList = __webpack_require__(46);
 
 var bodyClassList = _interopRequireWildcard(_bodyClassList);
 
@@ -22957,10 +22778,10 @@ ModalPortal.propTypes = {
   children: _propTypes.PropTypes.node
 };
 exports.default = ModalPortal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23053,7 +22874,7 @@ function teardownScopedFocus() {
 }
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23087,7 +22908,7 @@ function scopeTab(node, event) {
 }
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23124,7 +22945,7 @@ function remove(bodyClass) {
 }
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -23170,13 +22991,482 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 47 */
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header() {
+    return _react2.default.createElement(
+        "div",
+        { className: "container" },
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Recipe Box Application"
+        ),
+        _react2.default.createElement(
+            "h2",
+            null,
+            "Collect and store your recipes online"
+        )
+    );
+};
+
+exports.default = Header;
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Recipe = __webpack_require__(50);
+
+var _Recipe2 = _interopRequireDefault(_Recipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Recipes = function Recipes(props) {
+    return _react2.default.createElement(
+        'div',
+        { className: 'recipes' },
+        props.recipies.map(function (item, index) {
+            return _react2.default.createElement(_Recipe2.default, {
+                key: index,
+                recipeName: item.name,
+                recipeIngredients: item.ingredients,
+                index: index,
+                handleEditRecipe: props.handleEditRecipe,
+                handleRemoveRecipe: props.handleRemoveRecipe,
+                collapse: props.collapse
+            });
+        })
+    );
+};
+
+exports.default = Recipes;
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactCollapsible = __webpack_require__(51);
+
+var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+
+var _Actions = __webpack_require__(52);
+
+var _Actions2 = _interopRequireDefault(_Actions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Recipe = function Recipe(props) {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            _reactCollapsible2.default,
+            { trigger: props.recipeName, open: props.collapse },
+            _react2.default.createElement(
+                'h2',
+                { className: 'Collapsible__h2' },
+                'Ingredients'
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'Collapsible__content' },
+                props.recipeIngredients.map(function (ingredient, index) {
+                    return _react2.default.createElement(
+                        'div',
+                        { className: 'Collapsible__container', key: index },
+                        _react2.default.createElement(
+                            'p',
+                            { className: 'Collapsible__item' },
+                            ingredient
+                        )
+                    );
+                }),
+                _react2.default.createElement(_Actions2.default, {
+                    handleEditRecipe: props.handleEditRecipe,
+                    handleRemoveRecipe: props.handleRemoveRecipe,
+                    recipeName: props.recipeName,
+                    index: props.index,
+                    recipeIngredients: props.recipeIngredients
+                })
+            )
+        )
+    );
+};
+
+exports.default = Recipe;
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(7);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Collapsible = function (_Component) {
+  _inherits(Collapsible, _Component);
+
+  function Collapsible(props) {
+    _classCallCheck(this, Collapsible);
+
+    // Bind class methods
+    var _this = _possibleConstructorReturn(this, (Collapsible.__proto__ || Object.getPrototypeOf(Collapsible)).call(this, props));
+
+    _this.handleTriggerClick = _this.handleTriggerClick.bind(_this);
+    _this.handleTransitionEnd = _this.handleTransitionEnd.bind(_this);
+    _this.continueOpenCollapsible = _this.continueOpenCollapsible.bind(_this);
+
+    // Defaults the dropdown to be closed
+    if (props.open) {
+      _this.state = {
+        isClosed: false,
+        shouldSwitchAutoOnNextCycle: false,
+        height: 'auto',
+        transition: 'none',
+        hasBeenOpened: true,
+        overflow: props.overflowWhenOpen,
+        inTransition: false
+      };
+    } else {
+      _this.state = {
+        isClosed: true,
+        shouldSwitchAutoOnNextCycle: false,
+        height: 0,
+        transition: 'height ' + props.transitionTime + 'ms ' + props.easing,
+        hasBeenOpened: false,
+        overflow: 'hidden',
+        inTransition: false
+      };
+    }
+    return _this;
+  }
+
+  _createClass(Collapsible, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      var _this2 = this;
+
+      if (this.state.shouldOpenOnNextCycle) {
+        this.continueOpenCollapsible();
+      }
+
+      if (prevState.height === 'auto' && this.state.shouldSwitchAutoOnNextCycle === true) {
+        window.setTimeout(function () {
+          // Set small timeout to ensure a true re-render
+          _this2.setState({
+            height: 0,
+            overflow: 'hidden',
+            isClosed: true,
+            shouldSwitchAutoOnNextCycle: false
+          });
+        }, 50);
+      }
+
+      // If there has been a change in the open prop (controlled by accordion)
+      if (prevProps.open !== this.props.open) {
+        if (this.props.open === true) {
+          this.openCollapsible();
+        } else {
+          this.closeCollapsible();
+        }
+      }
+    }
+  }, {
+    key: 'closeCollapsible',
+    value: function closeCollapsible() {
+      this.setState({
+        shouldSwitchAutoOnNextCycle: true,
+        height: this.refs.inner.offsetHeight,
+        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+        inTransition: true
+      });
+    }
+  }, {
+    key: 'openCollapsible',
+    value: function openCollapsible() {
+      this.setState({
+        inTransition: true,
+        shouldOpenOnNextCycle: true
+      });
+    }
+  }, {
+    key: 'continueOpenCollapsible',
+    value: function continueOpenCollapsible() {
+      this.setState({
+        height: this.refs.inner.offsetHeight,
+        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+        isClosed: false,
+        hasBeenOpened: true,
+        inTransition: true,
+        shouldOpenOnNextCycle: false
+      });
+    }
+  }, {
+    key: 'handleTriggerClick',
+    value: function handleTriggerClick(event) {
+      event.preventDefault();
+
+      if (this.props.triggerDisabled) {
+        return;
+      }
+
+      if (this.props.handleTriggerClick) {
+        this.props.handleTriggerClick(this.props.accordionPosition);
+      } else {
+        if (this.state.isClosed === true) {
+          this.openCollapsible();
+          this.props.onOpening();
+        } else {
+          this.closeCollapsible();
+          this.props.onClosing();
+        }
+      }
+    }
+  }, {
+    key: 'renderNonClickableTriggerElement',
+    value: function renderNonClickableTriggerElement() {
+      if (this.props.triggerSibling && typeof this.props.triggerSibling === 'string') {
+        return _react2.default.createElement(
+          'span',
+          { className: this.props.classParentString + '__trigger-sibling' },
+          this.props.triggerSibling
+        );
+      } else if (this.props.triggerSibling) {
+        return _react2.default.createElement(this.props.triggerSibling, null);
+      }
+
+      return null;
+    }
+  }, {
+    key: 'handleTransitionEnd',
+    value: function handleTransitionEnd() {
+      // Switch to height auto to make the container responsive
+      if (!this.state.isClosed) {
+        this.setState({ height: 'auto', overflow: this.props.overflowWhenOpen, inTransition: false });
+        this.props.onOpen();
+      } else {
+        this.setState({ inTransition: false });
+        this.props.onClose();
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var dropdownStyle = {
+        height: this.state.height,
+        WebkitTransition: this.state.transition,
+        msTransition: this.state.transition,
+        transition: this.state.transition,
+        overflow: this.state.overflow
+      };
+
+      var openClass = this.state.isClosed ? 'is-closed' : 'is-open';
+      var disabledClass = this.props.triggerDisabled ? 'is-disabled' : '';
+
+      //If user wants different text when tray is open
+      var trigger = this.state.isClosed === false && this.props.triggerWhenOpen !== undefined ? this.props.triggerWhenOpen : this.props.trigger;
+
+      // Don't render children until the first opening of the Collapsible if lazy rendering is enabled
+      var children = this.props.lazyRender && !this.state.hasBeenOpened && this.state.isClosed && !this.state.inTransition ? null : this.props.children;
+
+      // Construct CSS classes strings
+      var triggerClassString = this.props.classParentString + '__trigger ' + openClass + ' ' + disabledClass + ' ' + (this.state.isClosed ? this.props.triggerClassName : this.props.triggerOpenedClassName);
+      var parentClassString = this.props.classParentString + ' ' + (this.state.isClosed ? this.props.className : this.props.openedClassName);
+      var outerClassString = this.props.classParentString + '__contentOuter ' + this.props.contentOuterClassName;
+      var innerClassString = this.props.classParentString + '__contentInner ' + this.props.contentInnerClassName;
+
+      return _react2.default.createElement(
+        'div',
+        { className: parentClassString.trim() },
+        _react2.default.createElement(
+          'span',
+          {
+            className: triggerClassString.trim(),
+            onClick: this.handleTriggerClick },
+          trigger
+        ),
+        this.renderNonClickableTriggerElement(),
+        _react2.default.createElement(
+          'div',
+          {
+            className: outerClassString.trim(),
+            ref: 'outer',
+            style: dropdownStyle,
+            onTransitionEnd: this.handleTransitionEnd
+          },
+          _react2.default.createElement(
+            'div',
+            {
+              className: innerClassString.trim(),
+              ref: 'inner'
+            },
+            children
+          )
+        )
+      );
+    }
+  }]);
+
+  return Collapsible;
+}(_react.Component);
+
+Collapsible.propTypes = {
+  transitionTime: _propTypes2.default.number,
+  easing: _propTypes2.default.string,
+  open: _propTypes2.default.bool,
+  classParentString: _propTypes2.default.string,
+  openedClassName: _propTypes2.default.string,
+  triggerClassName: _propTypes2.default.string,
+  triggerOpenedClassName: _propTypes2.default.string,
+  contentOuterClassName: _propTypes2.default.string,
+  contentInnerClassName: _propTypes2.default.string,
+  accordionPosition: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  handleTriggerClick: _propTypes2.default.func,
+  onOpen: _propTypes2.default.func,
+  onClose: _propTypes2.default.func,
+  onOpening: _propTypes2.default.func,
+  onClosing: _propTypes2.default.func,
+  trigger: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
+  triggerWhenOpen: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
+  triggerDisabled: _propTypes2.default.bool,
+  lazyRender: _propTypes2.default.bool,
+  overflowWhenOpen: _propTypes2.default.oneOf(['hidden', 'visible', 'auto', 'scroll', 'inherit', 'initial', 'unset']),
+  triggerSibling: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.func])
+};
+
+Collapsible.defaultProps = {
+  transitionTime: 400,
+  easing: 'linear',
+  open: false,
+  classParentString: 'Collapsible',
+  triggerDisabled: false,
+  lazyRender: false,
+  overflowWhenOpen: 'hidden',
+  openedClassName: '',
+  triggerClassName: '',
+  triggerOpenedClassName: '',
+  contentOuterClassName: '',
+  contentInnerClassName: '',
+  className: '',
+  triggerSibling: null,
+  onOpen: function onOpen() {},
+  onClose: function onClose() {},
+  onOpening: function onOpening() {},
+  onClosing: function onClosing() {}
+};
+
+exports.default = Collapsible;
+
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Actions = function Actions(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "Collapsible__item" },
+        _react2.default.createElement(
+            "button",
+            { className: "button",
+                onClick: function onClick(e) {
+                    props.handleEditRecipe(props.recipeName, props.recipeIngredients, props.index);
+                } },
+            "Edit"
+        ),
+        _react2.default.createElement(
+            "button",
+            { className: "button Actions__button-remove",
+                onClick: function onClick(e) {
+                    props.handleRemoveRecipe(props.index);
+                } },
+            "Remove"
+        )
+    );
+};
+
+exports.default = Actions;
+
+/***/ }),
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(48);
+var content = __webpack_require__(54);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23201,7 +23491,7 @@ if(false) {
 }
 
 /***/ }),
-/* 48 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(21)(undefined);
@@ -23215,7 +23505,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 49 */
+/* 55 */
 /***/ (function(module, exports) {
 
 
@@ -23310,13 +23600,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 50 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(51);
+var content = __webpack_require__(57);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23341,15 +23631,15 @@ if(false) {
 }
 
 /***/ }),
-/* 51 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(21)(undefined);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.Collapsible {\n  background: green; }\n\n.Collapsible__contentInner {\n  background: #00e600; }\n", ""]);
+exports.push([module.i, "html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n* {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box; }\n\n.button {\n  background-color: #233237;\n  border: none;\n  border-bottom: 0.3rem solid #0f1618;\n  border-radius: 4px;\n  color: white;\n  cursor: pointer;\n  font-weight: 500;\n  margin-right: 1.2rem;\n  padding: 1.2rem; }\n\n.button--link {\n  background: none;\n  border: none;\n  color: #a5afd7;\n  padding: 0; }\n\n.Actions__button-remove {\n  background: #984b43; }\n\n.container {\n  max-width: 60rem;\n  margin: 0 auto;\n  padding: 0 1.6rem; }\n\n.ReactModalPortal > div {\n  opacity: 0; }\n\n.ReactModalPortal .ReactModal__Overlay {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  transition: opacity 200ms ease-in-out; }\n\n.ReactModalPortal .ReactModal__Overlay--after-open {\n  opacity: 1; }\n\n.ReactModalPortal .ReactModal__Overlay--before-close {\n  opacity: 0; }\n\n.modal {\n  background: #374e56;\n  color: white;\n  max-width: 30rem;\n  outline: none;\n  padding: 3.2rem;\n  text-align: left; }\n\n.modal__title {\n  margin: 0 0 1.6rem 0; }\n\n.modal__subtitle {\n  margin: 0 0 0.6rem 0; }\n\n.modal__body {\n  font-weight: 200;\n  margin: 0 0 3.2rem 0; }\n\n.modal__save-button {\n  background: #4b6b75; }\n\n.modal__close-button {\n  margin: 0;\n  background: #c5837c; }\n\n.modal__input {\n  width: 100%;\n  height: 1.6rem;\n  resize: none;\n  margin-bottom: 1.2rem; }\n\n.modal__textarea {\n  width: 100%;\n  height: 9.6rem;\n  resize: none;\n  margin-bottom: 1.2rem; }\n\n.modal__button-area {\n  display: flex;\n  justify-content: space-between; }\n\n.Collapsible {\n  background: #f8ecd2; }\n\n.Collapsible__contentInner {\n  padding: 10px;\n  border: 1px solid #ebebeb;\n  border-top: 0; }\n  .Collapsible__contentInner p {\n    margin-bottom: 10px;\n    font-size: 1.2rem;\n    line-height: 20px; }\n    .Collapsible__contentInner p:last-child {\n      margin-bottom: 0; }\n\n.Collapsible__trigger {\n  display: block;\n  font-weight: 400;\n  text-decoration: none;\n  color: #333333;\n  cursor: pointer;\n  position: relative;\n  border: 1px solid white;\n  padding: 10px;\n  background: #EAC67A;\n  color: black; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F107';\n    position: absolute;\n    right: 10px;\n    top: 10px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg); }\n  .Collapsible__trigger.is-disabled {\n    opacity: 0.5;\n    background-color: grey; }\n\n.Collapsible__content {\n  border: 1px solid black;\n  border-radius: 5px;\n  padding: 0px;\n  background-color: #edcf90;\n  color: black; }\n\n.Collapsible__container {\n  border-bottom: 1px solid black; }\n\n.Collapsible__h2 {\n  color: black; }\n\n.Collapsible__item {\n  padding: 5px; }\n\n.Collapsible__container:nth-child(even) {\n  background-color: #f1d9a6; }\n\n.recipes {\n  border-radius: 5px;\n  margin-bottom: 1.2rem; }\n\n/*\r\n.Collapsible {\r\n    background: green;\r\n}\r\n\r\n.Collapsible__contentInner {\r\n    background: lighten(green, 20%);\r\n}\r\n*/\nhtml {\n  font-size: 1.2rem;\n  background-color: #18121E;\n  background-image: url(\"/images/background.jpg\");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-attachment: fixed; }\n\nbody {\n  font-family: 'Roboto', sans-serif;\n  padding-top: 50px; }\n\nh1 {\n  color: white;\n  text-align: center;\n  font-size: 30px;\n  margin-bottom: 50px; }\n\nh2 {\n  color: white;\n  font-weight: 800;\n  text-align: center;\n  text-transform: uppercase;\n  margin-top: 20px;\n  margin-bottom: 20px; }\n\nstrong {\n  font-weight: bold; }\n\n#root {\n  max-width: 960px;\n  margin-left: auto;\n  margin-right: auto; }\n", ""]);
 
 // exports
 
