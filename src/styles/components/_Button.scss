@@ -1,0 +1,18 @@
+.button {
+    background-color: $gunmetal;
+    border: none;
+    border-bottom: .3rem solid darken($gunmetal, 10%);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: $s-size;
+    padding: $s-size;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}

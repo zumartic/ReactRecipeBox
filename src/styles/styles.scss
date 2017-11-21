@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+@import 'base/settings';
+@import "base/reset";
+@import "base/settings";
+@import "base/mixins";
+
+@import "components/Button";
+@import "components/Actions";
+@import "components/Container";
+@import "components/EditModal";
+@import "components/Recipe";
+@import "components/Recipes";
+
+/*
+.Collapsible {
+    background: green;
+}
+
+.Collapsible__contentInner {
+    background: lighten(green, 20%);
+}
+*/
+html {
+  font-size: $s-size;
+  background-color: $navy-blue;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  #root {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
